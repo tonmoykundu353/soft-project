@@ -69,13 +69,17 @@ public class home_activity extends AppCompatActivity {
                 int id = item.getItemId();
                 if(id==R.id.link)
                 {
-                    //Toast.makeText(home_activity.this, "link is clicked", Toast.LENGTH_SHORT).show();
-                    loadFragment(new link_fragment());
+                    Toast.makeText(home_activity.this, "link is clicked", Toast.LENGTH_SHORT).show();
+                    //loadFragment(new link_fragment());
+                    Intent intent=new Intent(home_activity.this, EventShowingActivity.class);
+                    startActivity(intent);
 
                 }
                 else if (id==R.id.university) {
-                    //Toast.makeText(home_activity.this, "university is clicked", Toast.LENGTH_SHORT).show();
-                    loadFragment(new university_fragment());
+                    Toast.makeText(home_activity.this, "university is clicked", Toast.LENGTH_SHORT).show();
+                    //loadFragment(new university_fragment());
+                    Intent intent=new Intent(home_activity.this, OrganizerLoginActivity2.class);
+                    startActivity(intent);
 
                 }
 
