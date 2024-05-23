@@ -3,11 +3,21 @@ package com.example.splash_learn;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * This is a User profile class
+ */
+
 public class UserProfile {
     private String name;
     private String email;
     private String password;
     private String collegeName;
+
+    /**
+     *
+     * @param builder
+     * This private constructor taking Builder class variable
+     */
 
     private UserProfile(Builder builder) {
         this.name = builder.name;
@@ -16,31 +26,63 @@ public class UserProfile {
         this.collegeName = builder.collegeName;
     }
 
+    /**
+     * This is the Builder Class
+     */
+
     public static class Builder {
         private String name;
         private String email;
         private String password;
         private String collegeName;
 
+        /**
+         *
+         * @param name
+         * @return
+         */
+
         public Builder setName(String name) {
             this.name = name;
             return this;
         }
+
+        /**
+         *
+         * @param email
+         * @return
+         */
 
         public Builder setEmail(String email) {
             this.email = email;
             return this;
         }
 
+        /**
+         *
+         * @param password
+         * @return
+         */
+
         public Builder setPassword(String password) {
             this.password = password;
             return this;
         }
 
+        /**
+         *
+         * @param collegeName
+         * @return
+         */
         public Builder setCollegeName(String collegeName) {
             this.collegeName = collegeName;
             return this;
         }
+
+        /**
+         *
+         * @return
+         */
 
         public UserProfile build() {
             return new UserProfile(this);
