@@ -38,7 +38,7 @@ public class Activity2 extends AppCompatActivity {
                     break;
                 case "3":
                     im.setImageResource(R.drawable.mark);
-                    txtInfo.setText(R.string.mark);
+                    txtInfo.setText(2R.string.mark);
                     break;
                 case "4":
                     im.setImageResource(R.drawable.jordan);
@@ -72,6 +72,9 @@ public class Activity2 extends AppCompatActivity {
                     im.setImageResource(R.drawable.confucius);
                     txtInfo.setText(R.string.confucius);
                     break;
+
+
+
 
 
             }
