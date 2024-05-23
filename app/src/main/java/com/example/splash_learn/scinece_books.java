@@ -94,6 +94,7 @@ public class scinece_books extends AppCompatActivity {
 
         } catch (JSONException e) {
             throw new RuntimeException(e);
+
         }
 
     }
