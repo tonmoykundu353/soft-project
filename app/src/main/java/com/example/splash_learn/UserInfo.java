@@ -7,6 +7,7 @@ package com.example.splash_learn;
 public class UserInfo {
     String user_name, password,college_name,email;
 
+
     /**
      *
      * @param user_name
