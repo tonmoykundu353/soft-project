@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/organizer_login_layout"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".OrganizerLoginActivity"
@@ -43,27 +43,24 @@
         android:id="@+id/id_organizer_university"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
+        android:layout_marginTop="260dp"
         android:text="Select University Name"
         android:textColor="@color/black"
         android:textSize="19dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintHorizontal_bias="0.349"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.442" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Spinner
         android:id="@+id/id_enter_organizer_university_spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.873"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.432" />
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/id_organizer_roll"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
 
@@ -78,16 +75,17 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintHorizontal_bias="0.285"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.496" />
+        app:layout_constraintVertical_bias="0.455" />
 
     <EditText
         android:id="@+id/id_enter_organizer_roll"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginRight="12dp"
+        android:layout_marginBottom="304dp"
         android:ems="10"
         android:hint="University Roll"
         android:inputType="number"
@@ -95,10 +93,8 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.945"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.536" />
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/id_organizer_password"
@@ -113,10 +109,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.388"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.638" />
+        app:layout_constraintVertical_bias="0.628" />
 
     <EditText
         android:id="@+id/id_enter_organizer_password"
@@ -130,10 +126,10 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.643" />
+        app:layout_constraintVertical_bias="0.691" />
 
     <Button
         android:id="@+id/id_organizer_login_btn"
@@ -141,14 +137,13 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="88dp"
         android:backgroundTint="#E91E63"
         android:elevation="10dp"
         android:text="Submit"
         android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent" />
 
     <CheckBox
@@ -160,28 +155,9 @@
         android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.73" />
-
-    <TextView
-        android:id="@+id/Organizert_login_toastshowing_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-
-
-
-        android:textColor="@android:color/holo_red_dark"
-        android:textSize="18sp"
-
-
-
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_organizer_login_btn" />
+        app:layout_constraintVertical_bias="0.796" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

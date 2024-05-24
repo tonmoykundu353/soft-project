@@ -31,7 +31,7 @@ public class RegisteredStudentEtEventActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_registered_student_et_event);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.organizer_login_layout), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
@@ -40,17 +40,6 @@ public class RegisteredStudentEtEventActivity extends AppCompatActivity {
 
 
         UserRoll=getIntent().getStringExtra("UserRoll");
-
-        UserRoll = getIntent().getStringExtra("UserRoll");
-        if (UserRoll == null) {
-            // Handle the case when UserRoll is null
-            // For example, show an error message or return early
-            return;
-        }
-
-
-
-
         arrayList=new ArrayList<>();
         listView=findViewById(R.id.Reg_stud_at_event_listview_id);
         regStudAtEventAdapter=new RegStudAtEventAdapter(this,arrayList);
