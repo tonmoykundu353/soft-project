@@ -42,17 +42,6 @@ package com.example.splash_learn;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 public class Contestentinfo {
     String name,email,ContactNo;
 
