@@ -6,6 +6,7 @@ import org.junit.Test;
 
 public class ContestentinfoTest {
 
+
     private Contestentinfo contestentinfo;
 
     @Before
